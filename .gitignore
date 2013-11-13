@@ -1,3 +1,3 @@
-/node_modules
-.log
+Manager-contacts/node_modules
+Manager-contacts/.log
 .gitignore
