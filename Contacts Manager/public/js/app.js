@@ -139,13 +139,14 @@ $(function() {
         e.preventDefault();
         var newUserFname = $(e.currentTarget).find('input[name=fname]').val();
         var newUserLname = $(e.currentTarget).find('input[name=lname]').val();
-        var newUserAge = $(e.currentTarget).find('input[name=user-age]').val();
+        var newUserAge = $(e.currentTarget).find('input[name=age]').val();
+        var newPhoto = $(e.currentTarget).find('input[name=photo]').val();
 
         var newUser = new App.Models.User({
           firstName: newUserFname,
           lastName: newUserLname,
           age: newUserAge,
-          picture: null
+          picture: newPhoto
         });
         // for add data at server
         this.collection.create(newUser);
